@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
   background-color: whitesmoke;
@@ -66,7 +66,7 @@ textarea {
   flex-direction: column;
   margin-top: 25px;
   background-color: lightgray;
-  }
+}
 
 .row {
   display: flex;
@@ -76,21 +76,9 @@ textarea {
   border-bottom: none;
 }
 
-/* .time-block,
-.event-input,
-.save-event {
-  border: 5px solid #1a1a1a;
-  border-bottom: none;
-} */
-
 .container:last-of-type {
   border-bottom: 5px solid #1a1a1a;
 }
-
-/* .time-block,
-.event-input {
-  border-right: none;
-} */
 
 .time-block {
   text-align: center;
@@ -99,4 +87,25 @@ textarea {
   padding-top: 30px;
   font-weight: bolder;
   border-radius: 0 20px 20px 0;
+}
+
+input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
+
+.save-event {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.save-btn {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.save-btn:hover {
+  cursor: pointer;
 }
