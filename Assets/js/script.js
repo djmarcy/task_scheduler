@@ -30,11 +30,11 @@ for (i = 0; i < scheduleTime.length; i++) {
 // Control functions for save buttons & attach event listeners
 function saveSchedule9() {
 
-    let input = {
+    let input9am = {
         Event: document.getElementById("input9").value
     }
 
-    localStorage.setItem("9", JSON.stringify(input));
+    localStorage.setItem("9", JSON.stringify(input9am));
 
 }
 document.getElementById("save9").addEventListener("click", saveSchedule9)
@@ -45,11 +45,11 @@ document.getElementById("input9").value = input9
  
 function saveSchedule10() {
 
-    let input = {
+    let input10am = {
         Event: document.getElementById("input10").value
     }
 
-    localStorage.setItem("10", JSON.stringify(input));
+    localStorage.setItem("10", JSON.stringify(input10am));
 
 }
 document.getElementById("save10").addEventListener("click", saveSchedule10)
@@ -60,12 +60,11 @@ document.getElementById("input10").value = input10
  
 function saveSchedule11() {
 
-    let input = {
+    let input11am = {
         Event: document.getElementById("input11").value
     }
 
-    console.log(document.getElementById("input11").textContent)
-    localStorage.setItem("11", JSON.stringify(input));
+    localStorage.setItem("11", JSON.stringify(input11am));
 
 }
 document.getElementById("save11").addEventListener("click", saveSchedule11)
@@ -76,28 +75,27 @@ document.getElementById("input11").value = input11
  
 function saveSchedule12() {
 
-    let input = {
+    let input12p = {
         Event: document.getElementById("input12").value
     }
 
     console.log(document.getElementById("input12").textContent)
-    localStorage.setItem("12", JSON.stringify(input));
+    localStorage.setItem("12", JSON.stringify(input12p));
 
 }
 document.getElementById("save12").addEventListener("click", saveSchedule12)
 var input12 = localStorage.getItem("12")
 input12 = JSON.parse(input12)
-input12 = input12.Event
-document.getElementById("input12").value = input12
+document.getElementById("input12").value = input12.Event
  
 function saveSchedule13() {
 
-    let input = {
+    let input1p = {
         Event: document.getElementById("input13").value
     }
 
     console.log(document.getElementById("input13").textContent)
-    localStorage.setItem("1", JSON.stringify(input));
+    localStorage.setItem("1", JSON.stringify(input1p));
 
 }
 document.getElementById("save13").addEventListener("click", saveSchedule13)
@@ -108,12 +106,12 @@ document.getElementById("input13").value = input13
  
 function saveSchedule14() {
 
-    let input = {
+    let input2p = {
         Event: document.getElementById("input14").value
     }
 
     console.log(document.getElementById("input14").textContent)
-    localStorage.setItem("2", JSON.stringify(input));
+    localStorage.setItem("2", JSON.stringify(input2p));
 
 }
 document.getElementById("save14").addEventListener("click", saveSchedule14)
@@ -124,12 +122,12 @@ document.getElementById("input14").value = input14
  
 function saveSchedule15() {
 
-    let input = {
+    let input3p = {
         Event: document.getElementById("input15").value
     }
 
     console.log(document.getElementById("input15").textContent)
-    localStorage.setItem("3", JSON.stringify(input));
+    localStorage.setItem("3", JSON.stringify(input3p));
 
 }
 document.getElementById("save15").addEventListener("click", saveSchedule15)
@@ -140,12 +138,12 @@ document.getElementById("input15").value = input15
  
 function saveSchedule16() {
 
-    let input = {
+    let input4p = {
         Event: document.getElementById("input16").value
     }
 
     console.log(document.getElementById("input16").textContent)
-    localStorage.setItem("4", JSON.stringify(input));
+    localStorage.setItem("4", JSON.stringify(input4p));
 
 }
 document.getElementById("save16").addEventListener("click", saveSchedule16)
@@ -156,12 +154,12 @@ document.getElementById("input16").value = input16
  
 function saveSchedule17() {
 
-    let input = {
+    let input5p = {
         Event: document.getElementById("input17").value
     }
 
     console.log(document.getElementById("input17").textContent)
-    localStorage.setItem("5", JSON.stringify(input));
+    localStorage.setItem("5", JSON.stringify(input5p));
 
 }
 document.getElementById("save17").addEventListener("click", saveSchedule17)
@@ -169,3 +167,5 @@ var input17 = localStorage.getItem("5")
 input17 = JSON.parse(input17)
 input17 = input17.Event
 document.getElementById("input17").value = input17
+
+console.log(input9, input10, input11, input12, input13, input14, input15, input16, input17)
