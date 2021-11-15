@@ -7,7 +7,7 @@ Daily planner. Plot out the day ahead, and let the planner help you keep you on 
 Download to single directory & run index.html.
 
 ## Visuals
-![Daily Planner](assets/imgs/event_calendar.png)
+![Daily Planner](/assets/imgs/event_calendar.png)
 
 ## License
 MIT License
