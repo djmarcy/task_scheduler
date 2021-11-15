@@ -1,13 +1,16 @@
 // Set variables
 let m = moment();
-let currentHour = m.format("HH")
-let timeTracker = $("#currentDay")
-let scheduleTime =  $(".row")
+let currentHour = m.format("HH");
+let timeTracker = $("#currentDay");
+let scheduleTime =  $(".row");
+let saveBtn = document.getElementsByClassName(".save-btn")
 
-console.log(scheduleTime)
+
+//Set time
+timeTracker.text("It is currently " + m.format("hh:mm A") + " on " + m.format("L"));
 
 // Control schedule rows to display the correct color
-let time = 0
+let time = 0;
 for (i = 0; i < scheduleTime.length; i++) {
 
     let scheduleTime =  $(".row")[time].id
@@ -22,55 +25,112 @@ for (i = 0; i < scheduleTime.length; i++) {
     }
 
   time++
-    console.log(scheduleTime)
 }
 
-// Control function for save button
-    function saveSchedule() {
+// Control functions for save buttons & attach event listeners
+function saveSchedule9() {
 
-        // Store which box the input is being entered into
-        let schedule = JSON.parse(localStorage.getItem("dataKey")) || [];
-
-        // Store which save button was clicked
-
-        // Ensure on refresh that saved information is being output to correct input box — set input default to whatever's in local storage?
-    
+    let input = {
+        Event: document.getElementById("input9").value
     }
 
-    //Retrieve what's stored in Local Storage upon page load
-    document.getElementById('header').value = window.localStorage['header'];
+    localStorage.setItem("9 A.M.", JSON.stringify(input));
 
-    function saveScore() {
-        let hallOfFame = JSON.parse(localStorage.getItem("dataKey")) || [];
-      
-        let topScores = {
-          Initials: document.getElementById("high-score-initials").value,
-          Score: timeLeft,
-        };
-      
-        hallOfFame.push(topScores);
-      
-        localStorage.setItem("dataKey", JSON.stringify(hallOfFame));
-      
-        for (let i = 0; i < hallOfFame.length; i++) {
-          $("#top-scores").append(
-            "<li class='scores'>" +
-              hallOfFame[i].Initials +
-              " — " +
-              hallOfFame[i].Score +
-              "</li>"
-          );
-        }
+}
+document.getElementById("save9").addEventListener("click", saveSchedule9)
+ 
+function saveSchedule10() {
+
+    let input = {
+        Event: document.getElementById("input10").value
     }
 
-    function action() {
-        window.localStorage['header'] = document.getElementById('header').value;
+    localStorage.setItem("10 A.M.", JSON.stringify(input));
+
+}
+document.getElementById("save10").addEventListener("click", saveSchedule10)
+ 
+function saveSchedule11() {
+
+    let input = {
+        Event: document.getElementById("input11").value
     }
 
-    function action2() {
-        
+    console.log(document.getElementById("input11").textContent)
+    localStorage.setItem("11 A.M.", JSON.stringify(input));
+
+}
+document.getElementById("save11").addEventListener("click", saveSchedule11)
+ 
+function saveSchedule12() {
+
+    let input = {
+        Event: document.getElementById("input12").value
     }
 
-timeTracker.text("It is currently " + m.format("hh:mm A") + " on " + m.format("L"))
+    console.log(document.getElementById("input9").textContent)
+    localStorage.setItem("12 P.M.", JSON.stringify(input));
 
-addEventListener.scheduleTime("click", saveSchedule);
+}
+document.getElementById("save12").addEventListener("click", saveSchedule12)
+ 
+function saveSchedule13() {
+
+    let input = {
+        Event: document.getElementById("input13").value
+    }
+
+    console.log(document.getElementById("input9").textContent)
+    localStorage.setItem("1 P.M.", JSON.stringify(input));
+
+}
+document.getElementById("save13").addEventListener("click", saveSchedule13)
+ 
+function saveSchedule14() {
+
+    let input = {
+        Event: document.getElementById("input14").value
+    }
+
+    console.log(document.getElementById("input9").textContent)
+    localStorage.setItem("2 P.M.", JSON.stringify(input));
+
+}
+document.getElementById("save14").addEventListener("click", saveSchedule14)
+ 
+function saveSchedule15() {
+
+    let input = {
+        Event: document.getElementById("input15").value
+    }
+
+    console.log(document.getElementById("input9").textContent)
+    localStorage.setItem("3 P.M.", JSON.stringify(input));
+
+}
+document.getElementById("save15").addEventListener("click", saveSchedule15)
+ 
+function saveSchedule16() {
+
+    let input = {
+        Event: document.getElementById("input16").value
+    }
+
+    console.log(document.getElementById("input16").textContent)
+    localStorage.setItem("4 P.M.", JSON.stringify(input));
+
+}
+document.getElementById("save16").addEventListener("click", saveSchedule16)
+ 
+function saveSchedule17() {
+
+    let input = {
+        Event: document.getElementById("input17").value
+    }
+
+    console.log(document.getElementById("input17").textContent)
+    localStorage.setItem("5 P.M.", JSON.stringify(input));
+
+}
+document.getElementById("save17").addEventListener("click", saveSchedule17)
+

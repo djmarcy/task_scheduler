@@ -70,7 +70,7 @@ textarea {
 
 .row {
   display: flex;
-  white-space: pre-wrap;
+  white-space: none;
   height: 80px;
   border: solid 5px #1a1a1a;
   border-bottom: none;
