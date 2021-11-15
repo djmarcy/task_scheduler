@@ -100,12 +100,15 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rosybrown;
+  border-radius: 20px 0 0 20px;
 }
+
 .save-btn {
   max-width: 50px;
   max-height: 50px;
 }
 
-.save-btn:hover {
+.save-event:hover {
   cursor: pointer;
 }
